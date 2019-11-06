@@ -7,7 +7,7 @@ Um repositório com um CRUD de livros.
 3. [Mongoose](https://mongoosejs.com/docs/)
 
 ### Informações gerais
-A proposta dessa atividade é desenvolver um CRUD simples em uma API Rest com NodeJS, usando MongoDB como banco de dados. Apesar disso, eu desenvolvi apenas as buscas (buscar por todos os livros e buscar um livro específico) e o salvar.
+A proposta dessa atividade é desenvolver um CRUD simples em uma API Rest com NodeJS, usando MongoDB como banco de dados.
 
 ### Organização do projeto
 A organização das pastas foi pensada da seguinte forma:
@@ -42,4 +42,4 @@ Por fim, acesse no seu browser o link localhost:3001 e verifique se recebe o *We
 
 O retorno das requisições é um json com o resultado da operação, ou uma mensagem de erro (caso tenha havido algum).
 
-Para facilitar a execussão, disponibilizei uma documentação com as rotas do sistema, bem como o corpo esperado nas requisições e o tipo de retorno de cada uma. O acesso dessa documentação está disponível [clicando aqui]().
+Para facilitar a execussão, disponibilizei uma documentação com as rotas do sistema, bem como o corpo esperado nas requisições e o tipo de retorno de cada uma. O acesso dessa documentação está disponível [clicando aqui](https://documenter.getpostman.com/view/6141382/SW17Rajn).
