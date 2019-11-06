@@ -65,7 +65,12 @@ exports.update = async (req, res) => {
 
 exports.delete = async (req, res) => {
     try {
-        
+        const id = req.params.id;
+
+        const book_delete = await Books.deleteOne({"_id": id})
+
+        res.status(200).jsonp({sucess : 'Success'})
+
     } catch (err) {
         console.log(err)
         res.status(500).jsonp({error : 'Internal server error'});
