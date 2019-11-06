@@ -42,3 +42,32 @@ exports.save = async (req, res) => {
         res.status(500).jsonp({error : 'Internal server error'});
     }
 };
+
+exports.update = async (req, res) => {
+    try {
+        const id = req.params.id;
+
+        const new_book = {
+            title: req.body.title,
+            author: req.body.author
+        };
+
+        const book_update = await Books.replaceOne({"_id": id}, new_book);
+
+        const book = await Books.findById(id);
+
+        res.status(200).send(book);
+    } catch (err) {
+        console.log(err)
+        res.status(500).jsonp({error : 'Internal server error'});
+    }
+};
+
+exports.delete = async (req, res) => {
+    try {
+        
+    } catch (err) {
+        console.log(err)
+        res.status(500).jsonp({error : 'Internal server error'});
+    }
+}

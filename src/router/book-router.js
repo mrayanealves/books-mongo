@@ -12,4 +12,6 @@ router.get('/:id', controller.findById);
 
 router.post('/', controller.save);
 
+router.put('/:id', controller.update)
+
 module.exports = router; 
